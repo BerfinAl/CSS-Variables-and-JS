@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Variables</title>
+  </head>
+  <body>
+    <h1>Update CSS Variables with <span class="baseColor">JS</span></h1>
+    <div class="container">
+      <div class="preferences">
+        <label for="spacing">Spacing:</label>
+        <input type="range" value="0" id="spacing" min="5" max="100" />
+        <label for="blur">Blur:</label>
+        <input type="range" value="0" id="blur" min="0" max="20" />
+        <label for="baseColor">Base Color:</label>
+        <input type="color" value="#fca311" class="baseColor" />
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1551986781-2f5b76ad4a88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+        alt="" class="baseColor"
+      />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
